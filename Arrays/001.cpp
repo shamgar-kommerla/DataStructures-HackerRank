@@ -14,6 +14,12 @@ vector<string> split(const string &);
  */
 
 vector<int> reverseArray(vector<int> a) {
+    int sz=a.size();
+    vector<int> arr;
+    for(int i=0;i<(sz/2);i++){
+        arr.insert(a.begin(),a[i]);
+        arr.insert(a.begin()-i-1,a[sz-i-1]);
+    }
 
 }
 
